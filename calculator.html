@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Claculator</title>
+    <style>
+      table {
+        width: 400px;
+      }
+      table td {
+        padding: 40px;
+        text-align: center;
+        font-size: 30px;
+      }
+      table td:hover {
+        background: gray;
+        cursor: pointer;
+      }
+      .txt {
+        width: 100%;
+        height: 30px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      border="1px"
+      align="center"
+      width="200px"
+      style="border-collapse: collapse"
+    >
+      <tr>
+        <td colspan="4">
+          <input type="text" class="txt" />
+        </td>
+      </tr>
+      <tr>
+        <td onclick="get_value(this)">1</td>
+        <td onclick="get_value(this)">2</td>
+        <td onclick="get_value(this)">3</td>
+        <td onclick="get_value(this)">+</td>
+      </tr>
+      <tr>
+        <td onclick="get_value(this)">4</td>
+        <td onclick="get_value(this)">5</td>
+        <td onclick="get_value(this)">6</td>
+        <td onclick="get_value(this)">-</td>
+      </tr>
+      <tr>
+        <td onclick="get_value(this)">7</td>
+        <td onclick="get_value(this)">8</td>
+        <td onclick="get_value(this)">9</td>
+        <td onclick="get_value(this)">*</td>
+      </tr>
+      <tr>
+        <td onclick="get_value(this)">0</td>
+        <td onclick="set_value()">=</td>
+        <td onclick="remove_value()">C</td>
+        <td onclick="get_value(this)">/</td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="calculator.js">
+
+    </script>
+  </body>
+</html>
